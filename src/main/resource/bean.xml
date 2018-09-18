@@ -35,5 +35,7 @@
 		<property name="configLocation" value="classpath*:mybatis/*Mapper.xml"/>
 		<property name="dataSource" ref="dataSource"/>
 	</bean>
+	
+	<bean id="hello" class="com.zjp.bean.BeanHello" init-method="init" destroy-method="xmlDestroy"/>
 
 </beans>
